@@ -34,24 +34,94 @@ a {
 
 header {
   grid-area: header;
+  padding: 15px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .header-warning {
+  text-align: center;
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  padding: 1px;
 }
 
 main {
   grid-area: main;
+  padding: 0px 200px;
 }
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .hero-sales{
+
+}
+
+.hero-news{}
+
+.hero-recommender{} */
 .cardSection {
   border-radius: 20px;
   box-shadow: 3px 3px 10px var(--tertiary-color);
+  padding: 20px;
 }
 
+.cardSection ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  border: 2px solid red;
+}
+
+.globalSection {
+  text-align: center;
+}
+.globalSection ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shops {
+  background-image: url('./assets/tiendas-juego-mesa-espana.png');
+  background-position: cover;
+}
+
+.beginners {
+  background-image: url('./assets/juegos-iniciarse-min.png');
+  background-position: cover;
+  color: black;
+}
+
+.events {
+  background-image: url('./assets/eventos-juegos-mesa-zacatrus_1.png');
+  background-position: cover;
+}
 .subscriptionForm {
   background-color: #f4f4f4;
 }
 
 footer {
   grid-area: footer;
+}
+
+.footerGeneralInformation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-card {
+  border: 1px solid blue;
 }

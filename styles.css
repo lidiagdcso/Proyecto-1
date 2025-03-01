@@ -1,0 +1,36 @@
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', serif;
+  box-sizing: border-box;
+
+  --primary-color: white;
+  --secondary-color: black;
+  --tertiary-color: #606060;
+
+  --title-text: 24px;
+  --paragraph-text: 16px;
+  --card-title: 14px;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.header-warning {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.cardSection {
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px var(--tertiary-color);
+}
+
+.subscriptionForm {
+  background-color: #f4f4f4;
+}

@@ -14,6 +14,10 @@
   --paragraph-text: 16px;
   --card-title: 14px;
 }
+body {
+  margin: 0;
+  padding-top: 120px;
+}
 
 ul {
   list-style: none;
@@ -38,16 +42,21 @@ a {
 
 header {
   grid-area: header;
-  padding: 15px;
+  padding: 15px 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  width: 100vw;
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  z-index: 1000;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -70,6 +79,7 @@ nav ul {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   padding: 1px;
+  width: 100vw;
 }
 
 main {

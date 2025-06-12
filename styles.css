@@ -1,7 +1,8 @@
 :root {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
   box-sizing: border-box;
 
   --primary-color: white;
@@ -74,8 +75,10 @@ main {
 }
 
 .hero {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas:
+    'hero-sales hero-sales'
+    'hero-news hero-recommender';
 }
 
 .hero a img {
@@ -84,39 +87,86 @@ main {
   border: 1px solid palevioletred;
 }
 
-/* .hero-sales{
-
+.hero-sales {
+  grid-area: hero-sales;
 }
 
-.hero-news{}
+.hero-news {
+  grid-area: hero-news;
+}
 
-.hero-recommender{} */
+.hero-recommender {
+  grid-area: hero-recommender;
+}
 .cardSection {
   border-radius: 20px;
   box-shadow: 3px 3px 10px var(--tertiary-color);
   padding: 20px;
 }
 
+.cardSectionHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+cardTitle {
+  font-size: var(--card-title);
+  font-weight: 100;
+}
 .cardSection ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
-  
 }
 .cardSection ul li {
   text-align: center;
-  /* padding: 10px;
-  max-width: calc(20%-15px); */
-
   flex: 1 1 calc(14%);
-  /* max-width: calc(16% - 20px); */
-  /* min-width: 180px; */ */
+  max-width: 300px;
+  max-height: 500px;
 }
 
-li {
+.cardSection img {
+  width: 90%;
+  height: 33%;
+  object-fit: cover;
+  padding-top: 8px;
+}
+
+.cardSection ul li:hover {
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px var(--tertiary-color);
+}
+.cardSection ul li:hover .addCart {
+  visibility: visible;
+}
+
+.addCart {
+  background-color: #4884ec;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+.globalSection li {
   border: 2px solid red;
+}
+
+.gamePrice {
+  color: var(--secondary-color);
+  font-size: 28px;
+}
+
+.gamePrice span {
+  color: var(--tertiary-color);
+  font-size: 20px;
+  text-decoration: line-through;
 }
 
 .globalSection {

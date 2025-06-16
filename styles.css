@@ -288,6 +288,9 @@ footer {
   align-items: center;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
 .footerGeneralInformation {
   display: flex;
   flex-wrap: wrap;
@@ -305,4 +308,33 @@ footer {
 
 .contactUs {
   border: none;
+  list-style: none;
+}
+
+.rrss {
+  padding-top: 10px;
+}
+.rrssLogo {
+  width: 25px;
+  color: var(--tertiary-color);
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+.footerLogo {
+  text-align: center;
+  margin-top: 50px;
+  width: 100vw;
+}
+
+.legalInformation {
+  width: 100vw;
+}
+.legalInformation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  padding: 30px;
+  border-top: 1px solid var(--tertiary-color);
 }

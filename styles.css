@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
   box-sizing: border-box;
 
   --primary-color: white;
@@ -59,7 +58,6 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid green;
 }
 
 nav ul {
@@ -67,7 +65,20 @@ nav ul {
   flex-wrap: wrap;
   gap: 20px;
   padding: 15px;
-  border: 1px solid purple;
+}
+
+.login input {
+  padding: 8px 50px;
+  border: 1px solid var(--tertiary-color);
+  font-size: 15px;
+}
+
+.login ul li img {
+  width: 25px;
+  height: 30px;
+  color: var(--tertiary-color);
+  filter: grayscale(100%);
+  opacity: 0.6;
 }
 
 .header-warning {

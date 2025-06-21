@@ -10,9 +10,9 @@
   --tertiary-color: #606060;
   --quaternary-color: #333333;
 
-  --title-text: 24px;
-  --paragraph-text: 16px;
-  --card-title: 14px;
+  --title-text: 30px;
+  --paragraph-text: 24px;
+  --card-title: 30px;
 }
 body {
   margin: 0;
@@ -42,7 +42,6 @@ a {
 
 header {
   grid-area: header;
-  padding: 15px 0;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -68,7 +67,6 @@ nav ul {
   flex-wrap: wrap;
   gap: 20px;
   padding: 15px;
-
   border: 1px solid purple;
 }
 
@@ -76,7 +74,6 @@ nav ul {
   text-align: center;
   color: var(--primary-color);
   background-color: var(--secondary-color);
-  padding: 1px;
   width: 100vw;
 }
 
@@ -105,6 +102,7 @@ main {
 .coreContent {
   padding: 0px 170px;
 }
+
 .cardSection {
   border-radius: 20px;
   box-shadow: 3px 3px 10px var(--tertiary-color);
@@ -179,6 +177,14 @@ button {
 .globalSection {
   text-align: center;
   margin: 60px 0px;
+}
+
+.globalSection p {
+  font-size: var(--paragraph-text);
+}
+
+.titleGlobalSections {
+  font-size: var(--title-text);
 }
 .textGlobalSection {
   margin: 50px;

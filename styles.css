@@ -84,21 +84,14 @@ main {
   grid-area: main;
 }
 
-.hero {
+.subhero {
   display: grid;
-  grid-template-areas:
-    'hero-sales hero-sales'
-    'hero-news hero-recommender';
+  grid-template-areas: 'hero-news hero-recommender';
 }
 
-.hero a img {
-  height: 300px;
+.subhero a img {
+  height: 260px;
   width: 100%;
-  border: 1px solid palevioletred;
-}
-
-.hero-sales {
-  grid-area: hero-sales;
 }
 
 .hero-news {
